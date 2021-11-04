@@ -49,8 +49,8 @@
 
 import React, { useEffect, useState } from 'react'
 import Naruto2 from './Naruto2'
-
-function Naruto() {
+import AnimeBackground from './img/anime.jpeg'
+function Naruto(props) {
   const [quote, setQuote] = useState({})
 
   const random = `https://animechan.vercel.app/api/random`
@@ -61,6 +61,7 @@ function Naruto() {
     console.log(data)
   }
   useEffect(() => {
+    props.setBackgroundImage(AnimeBackground)
     makeApiCall(random)
   }, [])
 
@@ -73,20 +74,6 @@ function Naruto() {
 
   return (
     <div className="Anime">
-      {/* <div className="card">
-        <div className="card-content">
-          <div className="content">
-            <Naruto2 
-            anime={quote}
-            quote={quote}
-            character={quote}/>
-    
-            <button onClick={handleNewQuote}>
-              <span>Next Quote</span>
-            </button>
-          </div>
-        </div>
-      </div> */}
       <div class="card">
         <div class="card-content">
           <Naruto2 anime={quote} quote={quote} character={quote} />

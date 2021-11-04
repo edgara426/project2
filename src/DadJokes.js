@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-
-function Dad() {
+import Norris from './img/sky.jpeg'
+function Dad(props) {
   const [quote, setQuote] = useState({})
 
   const random = `https://api.chucknorris.io/jokes/random`
@@ -11,6 +11,7 @@ function Dad() {
     console.log(data)
   }
   useEffect(() => {
+    props.setBackgroundImage(Norris)
     makeApiCall(random)
   }, [])
 
@@ -20,7 +21,7 @@ function Dad() {
   }
 
   return (
-    <div className="Home">
+    <div className="Dad">
       {/* <div className="card">
         <div className="card-content">
           <div className="content">

@@ -4,15 +4,30 @@ import Home from './Home'
 import Naruto from './Naruto'
 import Nav from './Nav'
 import Dad from './DadJokes'
+import { useState } from 'react'
+import backgroundDefault from './img/snow.svg'
+
 
 function App() {
+  const [backgroundImage, setBackgroundImage] = useState(backgroundDefault)
+
   return (
-    <div className="App">
-      <Nav />
-      <div className="content is-vcentered">
-        <Route exact path="/" component={Home} />
-        <Route exact path="/anime" component={Naruto} />
-        <Route exact path="/norris" component={Dad} />
+    <div
+      className="container"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        height: '100vh',
+      }}
+    >
+      <div className="App">
+        <Nav />
+        <div className="content is-vcentered">
+          <Route exact path="/" render={() => <Home backgroundImage={backgroundImage} setBackgroundImage={setBackgroundImage}/> } />
+          <Route exact path="/anime" render={() => <Naruto backgroundImage={backgroundImage} setBackgroundImage={setBackgroundImage}/> } />
+          <Route exact path="/norris" render={() => <Dad backgroundImage={backgroundImage} setBackgroundImage={setBackgroundImage}/> } />
+        </div>
       </div>
     </div>
   )

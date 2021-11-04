@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Dad from './DadJokes'
+import Snow from './img/snow.svg'
 
-function Home() {
+function Home(props) {
   const [quote, setQuote] = useState({})
-
   // const randomQuote = useRef()
+
+ 
+
 
   const random = `https://favqs.com/api/qotd`
   const makeApiCall = async (random) => {
@@ -15,6 +18,7 @@ function Home() {
     // originally I had setQuote(data), but i would get an error when I .mapped it.
   }
   useEffect(() => {
+    props.setBackgroundImage(Snow)
     makeApiCall(random)
   }, [])
 
