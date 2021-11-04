@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Project Overview
+## Project Links
+- [add your github repo link]()
+- [add your deployment link]()
+## Project Description
+Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+## API
+Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
+https://favqs.com/api/qotd
+```
+{
+"qotd_date": "2021-10-29T00:00:00.000+00:00",
+"quote": {
+"id": 58767,
+"dialogue": false,
+"private": false,
+"tags": [],
+"url": "https://favqs.com/quotes/leonardo-da-vinci/58767-the-truth-of--",
+"favorites_count": 1,
+"upvotes_count": 1,
+"downvotes_count": 0,
+"author": "Leonardo da Vinci",
+"author_permalink": "leonardo-da-vinci",
+"body": "The truth of things is the chief nutriment of superior intellects."
+}
+}
+```
+https://animechan.vercel.app/api/random
+```
+{
+"anime": "One Piece",
+"character": "Donquixote Doflamingo",
+"quote": "The weaker person is the more he gets hung up on other people's pain and then he self-destructs"
+}
+```
+https://api.chucknorris.io/jokes/random
+```
+{
+"categories": [],
+"created_at": "2020-01-05 13:42:26.194739",
+"icon_url": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
+"id": "Go960ayjQ7aXzTcFh4Cz7g",
+"updated_at": "2020-01-05 13:42:26.194739",
+"url": "https://api.chucknorris.io/jokes/Go960ayjQ7aXzTcFh4Cz7g",
+"value": "Chuck Norris wears denim underwear."
+}
+```
+## Wireframes
+Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
+- [Mobile](https://imgur.com/a/rSFLsoa)
+### MVP/PostMVP - 5min
+The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+#### MVP EXAMPLE
+- Find and use external api 
+- Render data on page 
+- Allow user to interact with the page
+#### PostMVP EXAMPLE
+- Add localStorage or firebase for storage
+## Components
+##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
+Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
+| Component | Description | 
+| --- | :---: |  
+| App | This will make the initial data pull and include React Router| 
+| Header | This will render the header include the nav | 
+| Footer | This will render the header include the nav | 
+| Home | This will render a Random Quote on load | 
+| Fav | Will add Favorite Quotes |
+| Deleted | Will add the Deleted Quotes |
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Adding Form | H | 3hrs| ... | ... |
+| Working with API | H | 3hrs| ... | ... |
+| Load quote on page load| H | 4hr| ... | ... |
+| Add Fav Button | H | 2hr | ... | ... |
+| Add Remove Button | H | 2hr | ... | ... |
+| Total | H | 14hrs| ... | ... |
+## Additional Libraries
+ Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
+ * Maybe Bulma CSS
+## Code Snippet
+Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
+```
+function reverse(string) {
+	// here is the code to reverse a string of text
+}
+```
