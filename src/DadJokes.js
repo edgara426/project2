@@ -35,7 +35,7 @@ function Dad() {
         <div class="card-content">
           <p class="subtitle">{quote.value}</p>
         </div>
-        <p class="buttons is-centered">
+        <p class="buttons is-centered" onClick={handleNewQuote}>
           <button class="button is-large">
             <span class="icon is-large">
               <i class="fas fa-heading fa-2x">
