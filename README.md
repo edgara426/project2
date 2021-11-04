@@ -1,7 +1,7 @@
 # Project Overview
 ## Project Links
-- [add your github repo link]()
-- [add your deployment link]()
+- [github repo link](https://github.com/edgara426/project2)
+- [deployment link](edgara426.github.io/project2/)
 ## Project Description
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 ## API
@@ -65,26 +65,33 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Header | This will render the header include the nav | 
 | Footer | This will render the header include the nav | 
 | Home | This will render a Random Quote on load | 
-| Fav | Will add Favorite Quotes |
-| Deleted | Will add the Deleted Quotes |
+| Anime | This will render a Random Anime Quote on load |
+| Norris | This will render a Random Norris Quote on load |
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| ... | ... |
-| Working with API | H | 3hrs| ... | ... |
-| Load quote on page load| H | 4hr| ... | ... |
-| Add Fav Button | H | 2hr | ... | ... |
-| Add Remove Button | H | 2hr | ... | ... |
-| Total | H | 14hrs| ... | ... |
+| Adding Form | H | 3hrs| 4hr | 4hr |
+| Working with API | H | 3hrs| 8hr | 8hr |
+| Load quote on page load| H | 4hr| 2hr | 2hr |
+| Anime Api | H | 2hr | 2hr | 2hr |
+| Norris Api | H | 2hr | 2hr | 2hr |
+| Total | H | 14hrs| 20hrs | 20hrs |
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
- * Maybe Bulma CSS
+ * Bulma CSS
 ## Code Snippet
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
+
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+	Bulma Button and icon from Api
+
+  <button class="button is-large">
+            <span class="icon is-large">
+              <i class="fas fa-heading fa-2x">
+                <img src={quote.icon_url} alt="Norris" />
+              </i>
+            </span>
+          </button>
 ```
