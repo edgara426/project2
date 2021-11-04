@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Norris from './img/sky.jpeg'
+import Norris from './img/Norris.jpeg'
 function Dad(props) {
   const [quote, setQuote] = useState({})
 
