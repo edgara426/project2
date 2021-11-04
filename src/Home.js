@@ -34,18 +34,31 @@ function Home() {
 
   return (
     <div className="Home">
-      <div className="card">
+      {/* <div className="card">
         <div className="card-content">
           <div className="content">
-            {/* <h1>Home Quote</h1> */}
+           
             <p>{quote.body}</p>
             <p>{quote.author}</p>
-            <button onClick={handleNewQuote}>
+            <button className="button is-link is-hovered is-rounded" onClick={handleNewQuote}>
               <span>Next Quote</span>
             </button>
-            {/* <Dad /> */}
+            
           </div>
         </div>
+      </div> */}
+      <div class="card">
+        <div class="card-content">
+          <p class="title">{quote.author}</p>
+          <p class="subtitle">{quote.body}</p>
+        </div>
+
+        <button
+          className="button is-link is-hovered is-rounded is-centered"
+          onClick={handleNewQuote}
+        >
+          <span>Next Quote</span>
+        </button>
       </div>
     </div>
   )
