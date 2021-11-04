@@ -3,9 +3,9 @@ import React from 'react'
 function Naruto2({ quote}) {
   return (
     <>
-      <p>{quote.anime}</p>
-      <p>{quote.quote}</p>
-      <p>{quote.character}</p>
+      <p className="title">{quote.anime}</p>
+      <p className="subtitle">{quote.quote}</p>
+      <p className="subtitle">~{quote.character}</p>
    </>
   )
 }

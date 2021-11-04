@@ -49,8 +49,8 @@ function Home() {
       </div> */}
       <div class="card">
         <div class="card-content">
-          <p class="title">{quote.author}</p>
           <p class="subtitle">{quote.body}</p>
+          <p class="subtitle">~{quote.author}</p>
         </div>
 
         <button

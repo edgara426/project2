@@ -73,21 +73,36 @@ function Naruto() {
 
   return (
     <div className="Anime">
-      <div className="card">
+      {/* <div className="card">
         <div className="card-content">
           <div className="content">
             <Naruto2 
             anime={quote}
             quote={quote}
             character={quote}/>
-            {/* <p>{quote.anime}</p>
-            <p>{quote.quote}</p>
-            <p>{quote.character}</p> */}
+    
             <button onClick={handleNewQuote}>
               <span>Next Quote</span>
             </button>
           </div>
         </div>
+      </div> */}
+            <div class="card">
+        <div class="card-content">
+          <Naruto2 
+          anime={quote}
+          quote={quote}
+          character={quote}
+          />
+          
+        </div>
+
+        <button
+          className="button is-link is-hovered is-rounded is-centered"
+          onClick={handleNewQuote}
+        >
+          <span>Next Quote</span>
+        </button>
       </div>
     </div>
   )
