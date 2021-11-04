@@ -48,7 +48,7 @@
 // export default Naruto
 
 import React, { useEffect, useState } from 'react'
-import Naruto2 from "./Naruto2";
+import Naruto2 from './Naruto2'
 
 function Naruto() {
   const [quote, setQuote] = useState({})
@@ -87,16 +87,10 @@ function Naruto() {
           </div>
         </div>
       </div> */}
-            <div class="card">
+      <div class="card">
         <div class="card-content">
-          <Naruto2 
-          anime={quote}
-          quote={quote}
-          character={quote}
-          />
-          
+          <Naruto2 anime={quote} quote={quote} character={quote} />
         </div>
-
         <button
           className="button is-link is-hovered is-rounded is-centered"
           onClick={handleNewQuote}
